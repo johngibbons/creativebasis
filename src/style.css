@@ -69,10 +69,10 @@ html {
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, "Open Sans", sans-serif;
-  font-size: 140%;
+  font-size: 1.5rem;
   line-height: 1.5;
-  color: #444444;
-  background-color: white;
+  color: #343439;
+  background-color: #fff;
 }
 
 img {
@@ -81,7 +81,7 @@ img {
 }
 
 a {
-  color: #444444;
+  color: #343439;
   text-decoration: none;
 }
 a:focus, a:hover {
@@ -95,14 +95,14 @@ input[type="search"] {
 }
 
 ::-moz-selection {
-  background-color: #04a4cc;
-  color: white;
+  background-color: #de4f4f;
+  color: #fff;
   text-shadow: none;
 }
 
 ::selection {
-  background-color: #04a4cc;
-  color: white;
+  background-color: #de4f4f;
+  color: #fff;
   text-shadow: none;
 }
 
@@ -138,7 +138,7 @@ input[type="search"] {
  * Gallery & images
  */
 .wp-caption {
-  background: white;
+  background: #fff;
   border: thin solid #F0F0F0;
   max-width: 95%;
   padding: 5px 5px;
@@ -157,7 +157,7 @@ input[type="search"] {
 .gallery-caption {
   margin: 0;
   padding: 0 5px 5px;
-  font-size: 140%;
+  font-size: 1.5rem;
   line-height: 1.5;
 }
 
@@ -191,7 +191,7 @@ input[type="search"] {
 }
 
 /**
- * partial/header
+ * partials/header
  * ---
  */
 /**

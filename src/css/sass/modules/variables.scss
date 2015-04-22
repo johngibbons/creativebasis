@@ -9,7 +9,7 @@
  */
 
 $font-family-base: "Helvetica Neue", Helvetica, Arial, "Open Sans", sans-serif;
-$font-size-base: 140%;
+$font-size-base: 1.5rem;
 $line-height-base: 1.5;
 
 
@@ -17,9 +17,28 @@ $line-height-base: 1.5;
  * Colors
  */
 
-$text-color: #444;
-$body-bg: #fff;
-$selection-bg: #04A4CC;
+$black:             #000;
+$white:             #fff;
+
+$cb-red:						#de4f4f;
+$cb-green:					#aed136;
+$cb-yellow:					#e9df3c;
+$cb-light-gray:			#e5e4db;
+$cb-medium-gray:		#6f6c65;
+$cb-dark-gray:			#343439;
+
+$bones-pink:        #f01d4f;
+$blue:              #1377b8;
+
+$link-color:        $cb-medium-gray;
+$link-hover:        lighten($link-color, 10%);
+
+$border-color:      #ccc;
+$disabled-gray:     #cfcfcf;
+
+$text-color: $cb-dark-gray;
+$body-bg: $white;
+$selection-bg: $cb-red;
 
 
 /**
