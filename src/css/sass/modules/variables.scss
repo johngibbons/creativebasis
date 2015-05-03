@@ -8,9 +8,18 @@
  * Typography
  */
 
-$font-family-base: "Helvetica Neue", Helvetica, Arial, "Open Sans", sans-serif;
-$font-size-base: 1.5rem;
+$roboto:			"Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$proxima:     "proxima-nova", sans-serif;
+$freight:  		"freight-text-pro", "Georgia", Cambria, Times New Roman, Times, serif;
+$adelle:      "adelle", "Georgia", Cambria, Times New Roman, Times, serif;
+$nimbus-cond: "nimbus-sans-condensed", sans-serif;
+
+$font-family-base: $freight;
+$font-size-base: 1.4rem;
 $line-height-base: 1.5;
+
+$heading-font-family: $proxima;
+$heading-line-height: 1;
 
 
 /**
@@ -22,8 +31,8 @@ $white:             #fff;
 
 $cb-red:						#de4f4f;
 $cb-green:					#aed136;
-$cb-yellow:					#e9df3c;
-$cb-light-gray:			#e5e4db;
+$cb-yellow:					#d1c500;
+$cb-light-gray:			#ecf0f1;
 $cb-medium-gray:		#6f6c65;
 $cb-dark-gray:			#343439;
 
@@ -40,6 +49,10 @@ $text-color: $cb-dark-gray;
 $body-bg: $white;
 $selection-bg: $cb-red;
 
+$primary-color: $cb-dark-gray;
+$design-color: $cb-red;
+$build-color: $cb-yellow;
+$grow-color: $cb-green;
 
 /**
  * Grid
@@ -54,3 +67,9 @@ $margin-horizontal-base: 5px;
 $margin-vertical-base: 5px;
 $margin-horizontal-large: 15px;
 $margin-vertical-large: 15px;
+
+$base-border: 1px solid $cb-light-gray;
+
+// menu
+
+$mobile-nav-width: 260px;

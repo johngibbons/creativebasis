@@ -1,0 +1,44 @@
+body {
+  font-feature-settings: "kern", "liga", "pnum";
+  -webkit-font-smoothing: antialiased;
+  color: $text-color;
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $heading-font-family;
+  font-size: $font-size-base;
+  line-height: $heading-line-height;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+}
+
+h1 {
+	font-size: $font-size-base;
+	text-transform: uppercase;
+  font-family: $nimbus-cond;
+  margin: 5em 0;
+  color: $cb-medium-gray;
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-size: $font-size-base * 2;
+}
+
+.subhead {
+  font-family: $adelle;
+  font-size: $font-size-base * 1.25;
+}
+
+p {
+  font-size: $font-size-base * 1.5;
+  font-weight: 500;
+}

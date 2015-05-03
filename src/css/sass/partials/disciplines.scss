@@ -1,0 +1,26 @@
+.design {
+  font-weight: 100;
+}
+
+.build {
+  font-weight: 400;
+}
+
+.grow {
+  font-weight: 700;
+}
+
+.design-emphasis {
+	color: $design-color;
+	font-weight: 900;
+}
+
+.build-emphasis {
+	color: $build-color;
+	font-weight: 900;
+}
+
+.grow-emphasis {
+	color: $grow-color;
+	font-weight: 900;
+}

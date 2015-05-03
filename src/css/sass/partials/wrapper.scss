@@ -5,8 +5,15 @@
 
 
 .wrapper {
-  max-width: $wrapper-width;
-  padding: 0 $margin-horizontal-large;
+  padding: 0;
   margin: 0 auto;
   position: relative;
+}
+
+.container {
+	@include container(90%);
+
+	@include breakpoint(desktop) {
+		@include container(80%);
+	}
 }

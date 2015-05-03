@@ -5,9 +5,39 @@
 
 
 // Header container
-.header {}
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: $mobile-nav-width;
+	background-color: $white;
+}
 
 // Logo
-.logo {}
+.logo {
+	background-color: $cb-dark-gray;
+	width: 100%;
+	padding: 3em 0;
 
-.logo-img {}
+	@include breakpoint(tablet) {
+
+	}
+}
+
+.logo-img {
+	display: block;
+	padding: 0 2em 0 4em;
+}
+
+
+// Navigation Styles
+
+.nav {
+	ul {
+
+	}
+
+	li {
+
+	}
+}

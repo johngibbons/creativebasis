@@ -4,4 +4,11 @@
  */
 
 
-.footer {}
+.footer {
+	text-align: center;
+	font-family: $proxima;
+	text-transform: uppercase;
+	p {
+		font-size: $font-size-base;
+	}
+}
