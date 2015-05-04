@@ -24,13 +24,18 @@ h1 {
 	font-size: $font-size-base;
 	text-transform: uppercase;
   font-family: $nimbus-cond;
-  margin: 5em 0;
+  margin: 1em 0;
   color: $cb-medium-gray;
   letter-spacing: 2px;
 }
 
 h2 {
   font-size: $font-size-base * 2;
+
+  &.page-subtitle {
+    font-size: $font-size-base *2;
+    font-family: $adelle;
+  }
 }
 
 .subhead {

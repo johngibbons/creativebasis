@@ -1,41 +1,100 @@
 #blog-index {
+	background-color: $cb-lightest-gray;
+
+	@include layout(12 0 fluid);
+	@include container(12);
+
 	article {
+
+		display: block;
+		position: relative;
+		border-right: $base-border;
+		border-bottom: $base-border;
+		@include span(12 of 12);
+		height: 600px;
+
+		&:first-child {
+
+			@include breakpoint(tablet) {
+				@include span(8 of 12 no-gutters);
+				height: 600px;
+			}
+		}
+
+		&:nth-child(2), &:nth-child(3) {
+
+			@include breakpoint(tablet) {
+				@include span(4 of 12 no-gutters);
+				height: 300px;
+			}
+
+		}
+
 		@include breakpoint(tablet) {
-			@include span(4 of 12);
+			@include span(3 of 12 no-gutters);
+			height: 300px;
 		}
 
-		@include breakpoint(desktop) {
-			@include span(3 of 12);
-		}
-	}
-
-	h2 {
+		h2 {
 			font-size: $font-size-base * 1.5;
 			margin: 2em 0;
 		}
 
-	.post-thumb {
+		a {
+			position: absolute;
+			display: block;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 2;
+		}
+
+		&:hover {
+
+			> .post-thumb-image {
+				opacity: 1;
+			}
+
+			> .post-thumb-details {
+				color: $white;
+
+				.subhead {
+					color: $white;
+				}
+			}
+		}
+	}
+
+	.post-thumb-image {
 		display: block;
 		width: 100%;
 		height: 100%;
-		position: relative;
-		border: $base-border;
+		background-position: center;
+		background-size: cover;
+		opacity: 0;
+		transition: all 0.3s ease-in-out;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(brightness(50%))";
+	  filter: brightness(50%);
 	}
 
-	.post-title {
+	.post-thumb-details {
 		position: absolute;
 		top: 50%;
 		left: 50%;
-		transform: translate2d(-50%, -50%);
-	}
-
-	.wp-post-image {
-		opacity: 0;
+		transform: translate(-50%, -50%);
+		margin: 0;
+		transition: all 0.3s ease-in-out;
 	}
 
 	.subhead {
 		font-size: $font-size-base;
-		font-style: italic;
+		text-transform: uppercase;
+	  font-family: $nimbus-cond;
+	  margin: 1em 0;
+	  color: $cb-medium-gray;
+	  letter-spacing: 2px;
+		transition: all 0.3s ease-in-out;
 	}
 
 	.excerpt {
