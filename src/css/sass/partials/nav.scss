@@ -12,9 +12,7 @@
   }
 }
 
-.nav {}
-
-.menu {
+.nav {
 
 	ul {
 		padding: 0;
@@ -46,8 +44,8 @@ $transition: .3s; // increase this to see the transformations in slow-motion
 
 .lines-button {
   position: fixed;
-  top: 0.9em;
-  left: 1em;
+  top: 2em;
+  left: 2em;
   display: inline-block;
   padding: (1.5 * $button-size - $button-size/12) (1.5 * $button-size - .5 * $button-size);
   margin: 0;

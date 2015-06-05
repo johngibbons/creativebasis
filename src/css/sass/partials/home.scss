@@ -35,6 +35,9 @@
 		z-index: 1;
 		font-size: 6em;
 		margin-bottom: 0.25em;
+		font-family: $proxima;
+		color: $cb-dark-gray;
+		text-transform: uppercase;
 
 		@include breakpoint(desktop) {
 			max-width: 35%;
@@ -79,11 +82,20 @@
 
 }
 
+.fullwidth {
+	h1 {
+		font-family: $proxima;
+		text-transform: uppercase;
+
+		@include breakpoint(desktop) {
+			@include span(4 of 6 last);
+		}
+	}
+}
 
 
 .section-bullets {
-	font-size: $font-size-base * 1.75;
-	font-family: $adelle;
+	font-size: $font-size-base*1.5;
 	line-height: 2;
 
 	ul {
@@ -95,7 +107,7 @@
 	}
 
 	@include breakpoint(desktop) {
-		@include span(2 of 6 last);
+		@include span(2 of 6);
 	}
 }
 
@@ -152,7 +164,10 @@ section.images {
 }
 
 .section-description {
+	color: $cb-medium-gray;
+	font-size: $font-size-base * 1.25;
+
 	@include breakpoint(desktop) {
-		@include span(4 of 6);
+		@include span(4 of 6 last);
 	}
 }

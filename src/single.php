@@ -9,41 +9,53 @@
 			<!-- article -->
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-				<!-- post thumbnail -->
-				<?php if ( has_post_thumbnail()) : // Check if Thumbnail exists ?>
-					<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-						<?php the_post_thumbnail(); // Fullsize image for the single post ?>
-					</a>
+				<?php if ( has_post_thumbnail()) : // Check if thumbnail exists ?>
+					<?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
 				<?php endif; ?>
-				<!-- /post thumbnail -->
+				<div class="single-header">
 
-				<!-- post title -->
-				<h1>
-					<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
-				</h1>
-				<!-- /post title -->
+					<div class="single-title">
+						<!-- post title -->
+						<h1 class="title-text"><?php the_title(); ?></h1>
+						<!-- /post title -->
+						<span class="date minimal-text">
+							<time datetime="<?php the_time('Y-m-d'); ?> <?php the_time('H:i'); ?>"><?php the_date(); ?></time>
+						</span>
+					</div>
 
-				<!-- post details -->
-				<span class="date">
-					<time datetime="<?php the_time('Y-m-d'); ?> <?php the_time('H:i'); ?>">
-						<?php the_date(); ?> <?php the_time(); ?>
-					</time>
-				</span>
-				<span class="author"><?php _e( 'Published by', 'html5blank' ); ?> <?php the_author_posts_link(); ?></span>
-				<span class="comments"><?php if (comments_open( get_the_ID() ) ) comments_popup_link( __( 'Leave your thoughts', 'html5blank' ), __( '1 Comment', 'html5blank' ), __( '% Comments', 'html5blank' )); ?></span>
-				<!-- /post details -->
+					<!-- post thumbnail -->
+					<?php if ( has_post_thumbnail()) : // Check if Thumbnail exists ?>
+						<div class="single-featured-image parallax" style="background-image: url('<?php echo $url ?>')"></div>
+					<?php endif; ?>
+					<!-- /post thumbnail -->
+				</div>
 
-				<?php the_content(); // Dynamic Content ?>
+				<section class="single-content-section">
+					<div class="container">
+						<div class="single-details">
+							<!-- post details -->
+							<span class="author">
+								<?php echo get_avatar( get_the_author_meta( 'ID' ), 128 ); ?>
+								<span class="author-name minimal-text"><?php _e( 'Written by:', 'html5blank' ); ?> <?php the_author_posts_link(); ?></span>
+							</span>
+							<!-- /post details -->
+						</div>
 
-				<?php the_tags( __( 'Tags: ', 'html5blank' ), ', ', '<br>'); // Separated by commas with a line break at the end ?>
+						<div class="single-content content-text">
+							<?php the_content(); // Dynamic Content ?>
+						</div>
 
-				<p><?php _e( 'Categorised in: ', 'html5blank' ); the_category(', '); // Separated by commas ?></p>
+						<?php the_tags( __( 'Tags: ', 'html5blank' ), ', ', '<br>'); // Separated by commas with a line break at the end ?>
 
-				<p><?php _e( 'This post was written by ', 'html5blank' ); the_author(); ?></p>
+						<p><?php _e( 'Categorised in: ', 'html5blank' ); the_category(', '); // Separated by commas ?></p>
 
-				<?php edit_post_link(); // Always handy to have Edit Post Links available ?>
+						<p><?php _e( 'This post was written by ', 'html5blank' ); the_author(); ?></p>
 
-				<?php comments_template(); ?>
+						<?php edit_post_link(); // Always handy to have Edit Post Links available ?>
+
+						<?php comments_template(); ?>
+					</div>
+				</section>
 
 			</article>
 			<!-- /article -->
@@ -54,9 +66,9 @@
 
 			<!-- article -->
 			<article>
-
-				<h1><?php _e( 'Sorry, nothing to display.', 'html5blank' ); ?></h1>
-
+				<div class="conatiner">
+					<h1><?php _e( 'Sorry, nothing to display.', 'html5blank' ); ?></h1>
+				</div>
 			</article>
 			<!-- /article -->
 

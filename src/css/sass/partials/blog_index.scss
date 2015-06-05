@@ -37,7 +37,7 @@
 
 		h2 {
 			font-size: $font-size-base * 1.5;
-			margin: 2em 0;
+			margin: 0 0 0.5em 0;
 		}
 
 		a {
@@ -59,7 +59,7 @@
 			> .post-thumb-details {
 				color: $white;
 
-				.subhead {
+				.minimal-text {
 					color: $white;
 				}
 			}
@@ -87,13 +87,8 @@
 		transition: all 0.3s ease-in-out;
 	}
 
-	.subhead {
-		font-size: $font-size-base;
-		text-transform: uppercase;
-	  font-family: $nimbus-cond;
-	  margin: 1em 0;
-	  color: $cb-medium-gray;
-	  letter-spacing: 2px;
+	.minimal-text {
+	  margin: 1em 0 0 0;
 		transition: all 0.3s ease-in-out;
 	}
 

@@ -2,9 +2,11 @@
 
 	<main role="main">
 		<!-- section -->
-		<section>
-
-			<h1><?php _e( 'Archives', 'html5blank' ); ?></h1>
+		<section class="page-title">
+			<div class="container">
+				<h1 class="minimal-text"><?php _e( 'Archives', 'html5blank' ); ?></h1>
+			</div>
+		</section>
 
 			<?php get_template_part('loop'); ?>
 

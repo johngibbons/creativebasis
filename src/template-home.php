@@ -23,8 +23,8 @@
 
 		<section class="animate fullwidth">
 			<div class="container">
-				<h1 class="design"><span class="design-emphasis">|</span>Design</h1>
-				<div class="section-description">
+				<h1 class="design title-text"><span class="design-emphasis">|</span>Design</h1>
+				<div class="section-description content-text">
 					<p>
 						We believe that design comes first.  We understand that we are designing for users, not ourselves, or even
 						our clients.
@@ -34,7 +34,7 @@
 						Let us tell you which one might be right for your next big idea.
 					</p>
 				</div>
-				<div class="section-bullets">
+				<div class="section-bullets minimal-text">
 					<ul class="design-emphasis">
 						<li>User Experience</li>
 						<li>Responsive</li>
@@ -58,8 +58,8 @@
 
 		<section class="animate fullwidth">
 			<div class="container">
-				<h1 class="build"><span class="build-emphasis">|</span>Build</h1>
-				<div class="section-description">
+				<h1 class="build title-text"><span class="build-emphasis">|</span>Build</h1>
+				<div class="section-description content-text">
 					<p>
 						Quality code is worth its weight in gold (if code weighed a lot...you get what we mean).  A well thought
 						out software architecture along with good, clean, modular code can save months of work and thousands of dollars.
@@ -72,7 +72,7 @@
 						<button class="build-btn">Get Started Today</button>
 					</a>
 				</div>
-				<div class="section-bullets">
+				<div class="section-bullets minimal-text">
 					<ul class="build-emphasis">
 						<li>Ruby on Rails</li>
 						<li>Wordpress</li>
@@ -96,8 +96,8 @@
 
 			<section class="animate fullwidth">
 				<div class="container">
-					<h1 class="grow"><span class="grow-emphasis">|</span>Grow</h1>
-					<div class="section-description">
+					<h1 class="grow title-text"><span class="grow-emphasis">|</span>Grow</h1>
+					<div class="section-description content-text">
 						<p>
 							Nunc lobortis ultrices justo. Sed feugiat semper lorem ac convallis. Nam ornare mollis mollis. 
 							Quisque venenatis urna vitae pulvinar consectetur. Morbi in ligula at dolor sagittis euismod. 
@@ -110,7 +110,7 @@
 							<button class="grow-btn">Make More Money</button>
 						</a>
 					</div>
-					<div class="section-bullets">
+					<div class="section-bullets minimal-text">
 						<ul class="grow-emphasis">
 							<li>Pay Per Click</li>
 							<li>Display Ads</li>

@@ -16,7 +16,7 @@
 			<?php the_title("<h2 class='post-title'>", "</h2>"); ?>
 			<!-- /post title -->
 			<!-- post details -->
-			<p class="date subhead">
+			<p class="date minimal-text">
 				<time datetime="<?php the_time('Y-m-d'); ?> <?php the_time('H:i'); ?>"><?php echo get_the_date(); ?></time>
 			</p>
 			<!-- /post details -->

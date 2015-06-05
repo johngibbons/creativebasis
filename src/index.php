@@ -4,8 +4,8 @@
 		<div class="container">
 
 			<section class="page-title">
-				<h1><?php _e( 'Blog', 'html5blank' ); ?></h1>
-				<h2 class="page-subtitle"><?php _e( 'Helpful Tips and Tricks', 'html5blank' ); ?></h2>
+				<h1 class="minimal-text"><?php _e( 'Blog', 'html5blank' ); ?></h1>
+				<h2 class="page-subtitle title-text"><?php _e( 'Helpful Tips and Tricks', 'html5blank' ); ?></h2>
 			</section>
 			<!-- section -->
 		</div>

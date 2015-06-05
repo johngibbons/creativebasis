@@ -2,9 +2,14 @@
 
 	<main role="main">
 		<!-- section -->
-		<section class="container">
+		<section class="page-title">
+			<div class="container">
+				<h1 class="minimal-text"><?php the_title(); ?></h1>
+				<h2 class="page-subtitle title-text"><?php _e( 'Who We Are', 'html5blank' ); ?></h2>
+			</div>
+		</section>
 
-			<h1><?php the_title(); ?></h1>
+		<section>
 
 		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
